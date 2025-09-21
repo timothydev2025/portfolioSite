@@ -65,7 +65,7 @@ export default function AboutSection({ id }: AboutSectionProps) {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-center text-xl md:text-2xl text-zinc-300 dark:text-zinc-600 mb-16 max-w-3xl italic font-light leading-relaxed"
         >
-          "Passionate about transforming complex challenges into elegant,
+          &quot;Passionate about transforming complex challenges into elegant,
           scalable solutions that drive{" "}
           <motion.span
             className="font-bold bg-gradient-to-r from-blue-400 via-blue-800 to-blue-900 
@@ -86,7 +86,7 @@ export default function AboutSection({ id }: AboutSectionProps) {
           >
             meaningful innovation
           </motion.span>
-          ."
+          &quot;
         </motion.p>
 
         {/* Two Column Layout */}
@@ -100,7 +100,7 @@ export default function AboutSection({ id }: AboutSectionProps) {
             className="md:w-1/2 space-y-6"
           >
             <p className="text-base md:text-lg text-zinc-200 dark:text-zinc-800 leading-relaxed text-justify">
-              I'm{" "}
+              I&apos;m{" "}
               <span className="font-bold italic text-zinc-100 dark:text-zinc-700">
                 Nelson Chimes
               </span>
