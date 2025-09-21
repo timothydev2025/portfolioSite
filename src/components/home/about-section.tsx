@@ -112,7 +112,7 @@ export default function AboutSection({ id }: AboutSectionProps) {
             </p>
             <p className="text-base md:text-lg text-zinc-200 dark:text-zinc-800 leading-relaxed text-justify">
               As a Senior Engineer, I specialize in architecting robust
-              full-stack systems, designing scalable cloud solutions, and
+              full-stack systems, designing scalable solutions, and
               leading agile development teams. I excel at breaking down complex
               technical challenges and delivering reliable, maintainable
               software that drives business success and empowers teams to
