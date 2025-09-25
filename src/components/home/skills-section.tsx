@@ -291,7 +291,7 @@ export default function SkillSection({ id }: SkillSectionProps) {
               }}
               transition={{ duration: 0.3 }}
             >
-              "Every individual's hard work weaves the bigger story of life."
+              &quot;Every individual&apos;s hard work weaves the bigger story of life.&quot;
             </motion.span>
 
             {/* Subtle underline effect */}
