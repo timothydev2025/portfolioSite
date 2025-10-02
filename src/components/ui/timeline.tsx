@@ -38,13 +38,62 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-8 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          EXPERIENCE
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
-        </p>
+        <div className="flex flex-col gap-6 text-center md:text-left">
+          {/* Experience Badge with Glass Effect */}
+          <div
+            className="group relative mb-4 px-6 py-3 rounded-full 
+                         border-2 border-zinc-300/40 dark:border-zinc-600/40 
+                         bg-zinc-100/20 dark:bg-zinc-800/20 backdrop-blur-xl 
+                         text-zinc-800 dark:text-zinc-200 
+                         shadow-lg shadow-black/5 dark:shadow-black/20
+                         hover:shadow-xl hover:shadow-purple-500/10 dark:hover:shadow-purple-400/15
+                         hover:border-purple-400/50 dark:hover:border-purple-500/40
+                         transition-all duration-500 ease-out
+                         flex items-center gap-3 overflow-hidden w-fit mx-auto md:mx-0
+                         before:absolute before:inset-0 before:rounded-full 
+                         before:bg-gradient-to-br before:from-white/25 before:via-white/10 before:to-transparent 
+                         dark:before:from-white/15 dark:before:via-white/5 dark:before:to-transparent
+                         before:pointer-events-none before:transition-all before:duration-500
+                         hover:before:from-purple-400/20 hover:before:via-purple-300/10 hover:before:to-transparent
+                         dark:hover:before:from-purple-500/15 dark:hover:before:via-purple-400/8 dark:hover:before:to-transparent"
+          >
+            {/* Purple gradient overlay on hover */}
+            <div
+              className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/0 via-purple-400/0 to-purple-500/0 
+                            group-hover:from-purple-500/5 group-hover:via-purple-400/10 group-hover:to-purple-500/5
+                            dark:group-hover:from-purple-400/8 dark:group-hover:via-purple-300/15 dark:group-hover:to-purple-400/8
+                            transition-all duration-500 ease-out pointer-events-none"
+            />
+
+            <svg
+              className="relative z-10 h-5 w-5 text-zinc-600 dark:text-zinc-400 
+                            group-hover:text-purple-500 dark:group-hover:text-purple-400
+                            transition-colors duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span
+              className="relative z-10 font-semibold tracking-wide uppercase
+                            group-hover:text-purple-600 dark:group-hover:text-purple-400
+                            transition-colors duration-300"
+            >
+              Experience
+            </span>
+          </div>
+
+          <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-lg mx-auto md:mx-0">
+            A timeline of my professional journey — highlighting the roles,
+            companies, and milestones that shaped my career.
+          </p>
+        </div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-8">
