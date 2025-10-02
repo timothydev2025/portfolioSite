@@ -5,23 +5,23 @@ import { Clock as ClockIcon } from "lucide-react";
 
 export function Clock() {
   const [time, setTime] = useState<string>("");
-  const [country, setCountry] = useState<string>("");
+  const [location, setLocation] = useState<string>("");
 
   useEffect(() => {
     const update = () => {
-      // Get current time in New York (Eastern Time, USA)
+      // Get current time in Phoenix, Arizona, USA (Mountain Standard Time, no DST)
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
         hour12: false,
-        timeZone: "America/New_York",
+        timeZone: "America/Phoenix",
       };
       setTime(now.toLocaleTimeString([], options));
     };
 
-    setCountry("USA");
+    setLocation("Phoenix, USA");
 
     update();
     const timer = setInterval(update, 1000);
@@ -48,7 +48,7 @@ export function Clock() {
           {time}
         </span>
         <span className="font-mono text-xs text-muted-foreground leading-tight uppercase tracking-wide">
-          {country}
+          {location}
         </span>
       </div>
     </div>
