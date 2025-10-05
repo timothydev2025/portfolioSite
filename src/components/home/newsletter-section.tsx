@@ -70,7 +70,7 @@ export default function NewsletterSection({ id }: { id: string }) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Subscribe to Nelson's Newsletter
+                Subscribe to Nelson&apos;s Newsletter
               </motion.h2>
               <motion.p
                 className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed"
