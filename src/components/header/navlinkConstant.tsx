@@ -21,6 +21,8 @@ export const navItems = [
 // Imp Links items
 export const impLinks = [
   { href: "/blogs", label: "Blogs" },
+  { href: "/certificates", label: "Certifications" },
+  { href: "/achievements", label: "Achievements and Awards" },
   { href: "/knowledge-base", label: "Knowledge Base" },
   { href: "/maxims", label: "Maxims" },
   { href: "/research", label: "Research" },

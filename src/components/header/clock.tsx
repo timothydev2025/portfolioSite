@@ -21,7 +21,7 @@ export function Clock() {
       setTime(now.toLocaleTimeString([], options));
     };
 
-    setLocation("Phoenix, USA");
+    setLocation("USA");
 
     update();
     const timer = setInterval(update, 1000);
