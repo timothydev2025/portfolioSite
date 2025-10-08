@@ -60,13 +60,13 @@ export default function HeroSection({ id }: HeroSectionProps) {
         </motion.div>
 
         {/* Headline */}
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight dark:text-white">
-          Turning Ideas into High-Impact <br />
-          Solutions
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight dark:text-white">
+          Engineering Precision, Driving Programs, <br />
+          Powering the Next Wave of Compute
         </h1>
 
         {/* Personal Intro */}
-        <p className="mt-4 text-lg md:text-2xl font-light text-muted-foreground dark:text-neutral-300 max-w-xl">
+        <p className="mt-4 text-lg md:text-2xl font-light text-muted-foreground dark:text-neutral-300 max-w-2xl">
           I&apos;m{" "}
           <motion.span
             initial={{ opacity: 0, y: 8 }}
@@ -78,13 +78,14 @@ export default function HeroSection({ id }: HeroSectionProps) {
           >
             Nelson Chimes
           </motion.span>
-          , Senior Technical Program Manager, building impactful, scalable
-          solutions.
+          , a mission-driven Technical Program Manager who turns ideas into
+          execution—from concept through integration, testing, and scale.
         </p>
 
         {/* Optional Tagline */}
-        <p className="mb-6 text-sm md:text-base text-muted-foreground dark:text-neutral-400">
-          Driving teams, shaping strategy, and delivering measurable results.
+        <p className="mb-6 text-sm md:text-base lg:text-lg max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl text-muted-foreground dark:text-neutral-400 w-full">
+          My Focus is leading teams, shape strategy, and architecting the solutions the programs that brings advanced
+          infrastructure and next-gen AI Systems to life
         </p>
 
         {/* CTA Button */}

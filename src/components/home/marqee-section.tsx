@@ -9,16 +9,19 @@ interface MarqueeSectionProps {
 
 export default function MarqueeSection({
   items = [
-    "ReactJS",
-    "NextJS",
-    "TypeScript",
-    "TailwindCSS",
-    "Framer Motion",
-    "NodeJS",
-    "NestJS",
-    "GraphQL",
-    "Microservices",
-    "CI/CD",
+    "Advanced Manufacturing",
+    "Nanofabrication",
+    "AI Hardware Systems",
+    "Machine Learning Engineering",
+    "R&D & Innovation",
+    "Technical Program Leadership",
+    "Semiconductor Design",
+    "High-Performance Computing",
+    "AI Accelerators",
+    "Chip Architecture",
+    "Edge AI Systems",
+    "Electrochemical Systems",
+    "Next-Gen Infrastructure",
   ],
 }: MarqueeSectionProps) {
   return (

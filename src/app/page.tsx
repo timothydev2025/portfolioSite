@@ -2,10 +2,10 @@ import HeroSection from "@/components/home/hero-section";
 import AboutSection from "@/components/home/about-section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import MarqueeSection from "@/components/home/marqee-section";
-import SkillsSection from "@/components/home/skills-section";
 import ExperienceSection from "@/components/home/experience-section";
 import NewsletterSection from "@/components/home/newsletter-section";
 import BackToTop from "@/components/shared/back-to-top";
+import SkillSectionMain from "@/components/home/skill-section-main";
 // import ProjectsSection from "@/components/home/projects-section"
 // import ContactSection from "@/components/home/contact-section"
 
@@ -18,7 +18,7 @@ export default function HomePage() {
       <MarqueeSection id="marquee" />
       <AboutSection id="about" />
 
-      <SkillsSection id="skills" />
+      <SkillSectionMain id="skills" />
       <ExperienceSection id="experience" />
       <NewsletterSection id="newsletter" />
       {/* <ProjectsSection id="projects" />
