@@ -76,7 +76,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
              bg-gradient-to-r from-neutral-700 to-neutral-900 
              dark:from-neutral-200 dark:to-neutral-400"
           >
-            Nelson Chimes
+            Nelson Chime
           </motion.span>
           , a mission-driven Technical Program Manager who turns ideas into
           execution—from concept through integration, testing, and scale.
