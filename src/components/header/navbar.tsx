@@ -39,7 +39,7 @@ export function Navbar() {
       <div className="flex items-center justify-between px-4 md:px-6 py-4">
         {/* Left - Name */}
         <div className="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-foreground to-muted-foreground">
-          Nelson Chimes
+          Nelson Chime
         </div>
 
         {/* Desktop Nav */}
