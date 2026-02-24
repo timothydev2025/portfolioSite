@@ -133,7 +133,7 @@ export default function AboutSection({ id }: AboutSectionProps) {
           >
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl shadow-black/20 dark:shadow-black/40 ring-1 ring-white/10 dark:ring-zinc-700/30 bg-white/5 dark:bg-zinc-800/20 backdrop-blur-md">
               <img
-                src="/person-image.jpg" // Replace with actual image path
+                src="/nelson.png" // Nelson chime front
                 alt="Nelson Chimes"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out"
               />
