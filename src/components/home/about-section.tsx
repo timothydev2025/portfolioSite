@@ -104,22 +104,22 @@ export default function AboutSection({ id }: AboutSectionProps) {
               <span className="font-bold italic text-zinc-100 dark:text-zinc-700">
                 Nelson Chimes
               </span>
-              , a Technical Program Manager and Advanced Manufacturing
-              Engineer with deep expertise in AI hardware, semiconductor chips,
-              and nanofabrication. My career has centered on bridging
-              engineering innovation with program strategy—leading
-              cross-functional teams to design, build, and deliver cutting-edge
-              medical device chips, high-performance systems, and next-gen
-              infrastructure solutions.
+              , a Technical Program Manager and Advanced Manufacturing Engineer
+              with deep expertise in AI hardware, semiconductor chips, and
+              nanofabrication. My career has centered on bridging engineering
+              innovation with program strategy—leading cross-functional teams to
+              design, build, and deliver cutting-edge medical device chips,
+              high-performance systems, and next-gen infrastructure solutions.
             </p>
             <p className="text-base md:text-lg text-zinc-200 dark:text-zinc-800 leading-relaxed text-justify">
-              With a background spanning Chemical & Material Engineering,
-              Machine Learning, and R&D in electrochemical systems, I bring a
-              multidisciplinary approach to solving complex challenges at the
-              intersection of hardware and AI. I thrive on shaping strategy,
-              architecting scalable systems, and driving innovations that
-              advance technology while empowering teams to deliver impactful,
-              real-world results.
+              With a background spanning Technical Program Management for
+              Complex, Multi-Disciplinary Systems, Chemical & Material
+              Engineering, Petroleum Engineering, Machine Learning, and R&D in
+              electrochemical systems, I bring a multidisciplinary approach to
+              solving complex challenges at the intersection of hardware and AI.
+              I thrive on shaping strategy, architecting scalable systems, and
+              driving innovations that advance technology while empowering teams
+              to deliver impactful, real-world results.
             </p>
           </motion.div>
 
