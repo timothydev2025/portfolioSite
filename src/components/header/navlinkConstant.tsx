@@ -1,9 +1,9 @@
 import { Home, User, Code2, Briefcase, FolderOpen, Mail } from "lucide-react";
 
-// Main nav items
+// Main nav items — all hash links scroll to sections on the homepage
 export const navItems = [
   { href: "/", label: "Home", icon: <Home className="h-4 w-4" /> },
-  { href: "/about", label: "About", icon: <User className="h-4 w-4" /> },
+  { href: "/#about", label: "About", icon: <User className="h-4 w-4" /> },
   { href: "/#skills", label: "Skills", icon: <Code2 className="h-4 w-4" /> },
   {
     href: "/#experience",
@@ -11,11 +11,11 @@ export const navItems = [
     icon: <Briefcase className="h-4 w-4" />,
   },
   {
-    href: "/projects",
+    href: "/#projects",
     label: "Projects",
     icon: <FolderOpen className="h-4 w-4" />,
   },
-  { href: "/contact", label: "Contact", icon: <Mail className="h-4 w-4" /> },
+  { href: "/#contact", label: "Contact", icon: <Mail className="h-4 w-4" /> },
 ];
 
 // Imp Links items

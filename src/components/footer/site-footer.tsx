@@ -150,7 +150,7 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className="text-xs text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
             >
-              Designed by Shashank Singh
+              Website Designed by <strong>Shashank Singh</strong>
             </a>
           </div>
         </div>

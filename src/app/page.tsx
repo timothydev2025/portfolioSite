@@ -1,5 +1,6 @@
 import HeroSection from "@/components/home/hero-section";
 import AboutSection from "@/components/home/about-section";
+import EducationSection from "@/components/home/education-section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import MarqueeSection from "@/components/home/marqee-section";
 import ExperienceSection from "@/components/home/experience-section";
@@ -17,6 +18,7 @@ export default function HomePage() {
       </AuroraBackground>
       <MarqueeSection id="marquee" />
       <AboutSection id="about" />
+      <EducationSection id="education" />
 
       <SkillSectionMain id="skills" />
       <ExperienceSection id="experience" />

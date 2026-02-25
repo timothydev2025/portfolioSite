@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { navItems, impLinks } from "./navlinkConstant";
@@ -10,21 +11,38 @@ import { Button } from "@/components/ui/button";
 import { LinkIcon, Menu } from "lucide-react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { NavLink } from "./nav-link";
+import { useActiveSection } from "@/hooks/use-active-section";
+
+// Section IDs that exist on the homepage, in order top → bottom
+const HOME_SECTIONS = ["hero", "about", "skills", "experience", "projects", "contact"];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const activeSection = useActiveSection(HOME_SECTIONS);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  function isNavItemActive(href: string): boolean {
+    // On non-home pages, exact pathname match only
+    if (pathname !== "/") return pathname === href;
+
+    // On homepage: match section to href
+    if (href === "/") return activeSection === "hero" || activeSection === "";
+    if (href.startsWith("/#")) return activeSection === href.slice(2);
+    return false;
+  }
 
   return (
     <header
@@ -48,7 +66,12 @@ export function Navbar() {
             {navItems.map((item, idx) => (
               <div key={item.href} className="flex items-center gap-3">
                 {idx === 1 && <div className="h-6 w-px bg-border/50" />}
-                <NavLink href={item.href} label={item.label} icon={item.icon} />
+                <NavLink
+                  href={item.href}
+                  label={item.label}
+                  icon={item.icon}
+                  isActive={isNavItemActive(item.href)}
+                />
               </div>
             ))}
 
@@ -98,12 +121,14 @@ export function Navbar() {
                 </SheetHeader>
                 <nav className="mt-6 flex flex-col gap-3">
                   {navItems.map((item) => (
-                    <NavLink
-                      key={item.href}
-                      href={item.href}
-                      label={item.label}
-                      icon={item.icon}
-                    />
+                    <SheetClose key={item.href} asChild>
+                      <NavLink
+                        href={item.href}
+                        label={item.label}
+                        icon={item.icon}
+                        isActive={isNavItemActive(item.href)}
+                      />
+                    </SheetClose>
                   ))}
                   {/* Imp Links in mobile */}
                   <div className="mt-6 border-t pt-4">
@@ -112,13 +137,14 @@ export function Navbar() {
                     </h4>
                     <div className="flex flex-col gap-2">
                       {impLinks.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="text-sm text-muted-foreground hover:text-foreground"
-                        >
-                          {link.label}
-                        </Link>
+                        <SheetClose key={link.href} asChild>
+                          <Link
+                            href={link.href}
+                            className="text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {link.label}
+                          </Link>
+                        </SheetClose>
                       ))}
                     </div>
                   </div>
